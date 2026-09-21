@@ -176,14 +176,14 @@ python validate.py                 # 90 checks
 python -m snsled.main              # full pipeline, virtual display
 
 # with hardware
-python -m snsled.main --port COM3 --mode spectrum
+python -m snsled.main --port COM7 --mode spectrum
 python -m snsled.main --source song.wav --port /dev/ttyACM0 --mode mirror
-python -m snsled.main --source song.wav --port COM3 --audio-latency low
-python -m snsled.main --source mic --port COM3 --mode wave
+python -m snsled.main --source song.wav --port COM7 --audio-latency low
+python -m snsled.main --source mic --port COM7 --mode wave
 ```
 
 **Run `python find_port.py` first and use the port it marks as your Arduino.**
-`COM3` above is a placeholder, and on Windows it is very often the Bluetooth
+`COM7` above is a placeholder, and on Windows it is very often the Bluetooth
 serial port instead. That one *opens without error and discards every frame*,
 so the bars scroll, the audio plays, and the LCD stays blank with nothing in
 the log to explain it. Windows also renumbers the board when you replug it or
