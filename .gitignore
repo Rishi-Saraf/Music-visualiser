@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Audio.  Test tracks are large and almost always someone else's copyright --
+# point --source at a file on your own disk instead of committing one.
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.m4a
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

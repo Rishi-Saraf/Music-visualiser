@@ -1,0 +1,7 @@
+numpy>=1.24
+matplotlib>=3.7
+# optional -- install what you need:
+sounddevice>=0.4     # playing the track in sync, and live microphone input
+soundfile>=0.12      # robust wav/flac/ogg reading (falls back to scipy)
+pyserial>=3.5        # talking to the Arduino
+scipy>=1.10          # only used as a wav-reading fallback
